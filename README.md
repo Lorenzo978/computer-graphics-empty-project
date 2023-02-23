@@ -1,5 +1,6 @@
 # Prerequisites
-You should have already installed Vulkan SDK.
+- This script works for building the project with Visual Studio in Windows.
+- You should have already installed Vulkan SDK.
 # Create a new empty project
 1. Clone the repo.
 2. If your Visual Studio version is different from 2022, open the file `GenerateProjects.bat` in the `template` folder with a text editor and change `vs2022` with your version.
