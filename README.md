@@ -6,5 +6,5 @@ You should have already installed Vulkan SDK.
 3. Execute `generate.py`, which will copy and rename the `template` folder and generate the solution files.
 
 The project has this structure:
-- `src` contains your code. By default contains `main.cpp` test file.
+- `src` contains your code. By default it contains `main.cpp` test file.
 - `vendor` contains all the libraries. If you need to add other libraries, such as `stb_image.h` given by the professor, put all the files inside `vendor/other` folder. 
