@@ -1,6 +1,6 @@
-[submodule "template/template/vendor/GLFW"]
-	path = template/template/vendor/GLFW
+[submodule "vendor/GLFW"]
+	path = vendor/GLFW
 	url = https://github.com/Lorenzo978/glfw
-[submodule "template/template/vendor/glm"]
-	path = template/template/vendor/glm
+[submodule "vendor/glm"]
+	path = vendor/glm
 	url = https://github.com/g-truc/glm

@@ -2,15 +2,15 @@
 VULKAN_SDK = os.getenv("VULKAN_SDK")
 
 IncludeDir = {}
-IncludeDir["GLFW"] = "%{prj.name}/vendor/GLFW/include"
-IncludeDir["glm"] = "%{prj.name}/vendor/glm"
+IncludeDir["GLFW"] = "../vendor/GLFW/include"
+IncludeDir["glm"] = "../vendor/glm"
 IncludeDir["other"] = "%{prj.name}/vendor/other"
 IncludeDir["VulkanSDK"] = "%{VULKAN_SDK}/Include"
 
 LibraryDir = {}
 
 LibraryDir["VulkanSDK"] = "%{VULKAN_SDK}/Lib"
-LibraryDir["GLFW"] = "%{prj.name}/vendor/GLFW/bin/Debug/GLFW"
+LibraryDir["GLFW"] = "../vendor/GLFW/bin/Debug/GLFW"
 
 
 Library = {}
@@ -30,7 +30,7 @@ workspace "template"
 	startproject "template"
 
 outputdir = "%{cfg.buildcfg}"
-include "template/vendor/GLFW"
+include "../vendor/GLFW"
 
 project "template"
 	location "template"
@@ -48,9 +48,7 @@ project "template"
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
 		"%{prj.name}/vendor/other/**.h",
-		"%{prj.name}/vendor/other/**.cpp",
-		"%{prj.name}/vendor/glm/glm/**.hpp",
-		"%{prj.name}/vendor/glm/glm/**.inl"
+		"%{prj.name}/vendor/other/**.cpp"
 	}
 
 	includedirs {

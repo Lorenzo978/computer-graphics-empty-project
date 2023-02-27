@@ -25,6 +25,10 @@ if not path.exists(project_name):
         f.write(contents)
     
     os.chdir(project_name)
+    #os.system('mklink /D ' + project_name +'"/vendor/glm" "../vendor/glm"')
+    #os.system('mklink /D ' + project_name +'"/vendor/GLFW" "../vendor/GLFW"')
+    #os.symlink("../vendor/glm",project_name+"/vendor/glm")
+    #os.symlink( "../vendor/GLFW",project_name+"/vendor/GLFW")
     generate = "call GenerateProjects.bat"
     os.system(generate)
     print("Project files for "+ project_name + " generated.")
