@@ -9,6 +9,6 @@
 
 The project has this structure:
 - `src` contains your code. By default it contains only `main.cpp`. Put here the file `A##.cpp` and rename it to `main.cpp`.
-- `vendor` contains all the libraries. If you need to add other includes, such as `stb_image.h` given by the professor, put them inside `vendor/other` folder.
+- `vendor` contains all the libraries. If you need to add other includes, such as `stb_image.h` given by the professor in the `headers` folder, put them inside `vendor/other` folder.
 
 For any other folders, such as `shaders`, `textures` etc. copy them outside the `src` folder.
